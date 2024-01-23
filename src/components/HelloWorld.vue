@@ -5,14 +5,16 @@ defineProps({
   msg: String,
 })
 
-const count = ref(0)
+const a_count = ref(0)
+const b_count = ref(0)
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="a_count++">Acount is {{ a_count }}</button>
+    <button type="button" @click="b_count++">Bcount is {{ b_count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
